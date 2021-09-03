@@ -35,10 +35,10 @@ What is the advantage of a jump box?
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
 
 What does Filebeat watch for?
- - Filebeat collects data about the file system.
+ - It monitors the log files or locations that you specify and forwards them to Elasticsearch or Logstash for indexing.
   
 What does Metricbeat record?
- - Metricbeat collects machine metrics such as uptime or cpu usage. 
+ - It collects metric data from your target servers such as CPU usage or uptime, or memory. 
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -79,15 +79,16 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+
 What is the main advantage of automating configuration with Ansible?
- - One advantage of automation would be YAML Playbooks. It allows for setup in minutes using OpenSSH without having to go to each webserver individually. 
+ - One advantage of automation is YAML Playbooks. Playbooks allow for a quick setup of the VM without haivng to download and install different services individually. 
 
 The playbook implements the following tasks:
-- Install docker.io 
-- Install pip3 (python3-pip)
-- Increase Virtual Memory
-- Download and launch ELK docker container (sebp/elk:761) w/ published ports 5601, 5044, and 9200
-- Enable docker on boot
+ - Install docker.io 
+ - Install pip3 (python3-pip)
+ - Increase Virtual Memory
+ - Download and launch ELK docker container (sebp/elk:761) w/ published ports 5601, 5044, and 9200
+ - Enable docker on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -95,9 +96,9 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- Web-1 (dvwa) 10.0.0.6
-- Web-2 (dvwa) 10.0.0.7
-- Web-3 (dvwa) 10.0.0.8
+ - Web-1 (dvwa) 10.0.0.6
+ - Web-2 (dvwa) 10.0.0.7
+ - Web-3 (dvwa) 10.0.0.8
 
 We have installed the following Beats on these machines:
  - Filebeat
