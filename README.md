@@ -53,12 +53,12 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box Provisioner machine can accept connections from the Internet. 
-Access to this machine is only allowed from the following IP addresses:
+ Access to this machine is only allowed from the following IP addresses:
  - 66.232.xxx.xxx
-Machines within the network can only be accessed by the Jump Box Provisioiner.
-Which machine did you allow to access your ELK VM?
+ Machines within the network can only be accessed by the Jump Box Provisioiner.
+ Which machine did you allow to access your ELK VM?
  - Jump Box Provisioner
-What was its IP address?
+ What was its IP address?
  - 10.0.0.5
 
 A summary of the access policies in place can be found in the table below.
