@@ -57,6 +57,7 @@ Only the Jump Box Provisioner machine can accept connections from the Internet.
  - 66.232.xxx.xxx
  
  Machines within the network can only be accessed by the Jump Box Provisioiner.
+ 
   Which machine did you allow to access your ELK VM?
    - Jump Box Provisioner
   What was its IP address?
