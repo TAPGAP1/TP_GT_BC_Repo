@@ -27,7 +27,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly functional, in addition to restricting high volumes of traffic to the network.
 What aspect of security do load balancers protect? 
   -They help prevent overloading servers by balancing the flow of traffic between them.  If a server is hit by a DDoS attack or becomes unavailable
-  the other servers will pick up the slack. 
+  the other servers will take over and share the load. 
 What is the advantage of a jump box?
   -A Jump Box Provisioner is important. It prevents webserver VMs from being exposed by a public IP Address. This allows us to monitor and collect logs on a single box. We can also restrict the IP addresses able to communicate with the Jump Box, as we've done here.
 
@@ -52,27 +52,32 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
-
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Only the Jump Box Provisioner machine can accept connections from the Internet. 
+Access to this machine is only allowed from the following IP addresses:
+-66.232.xxx.xxx
+Machines within the network can only be accessed by the Jump Box Provisioiner.
+Which machine did you allow to access your ELK VM?
+  -Jump Box Provisioner
+What was its IP address?
+  -10.0.0.5
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                 | 66.232.xxx.xxx       |
+|  Web-1   | No                  | 10.0.0.5             |
+|  Web-2   | No                  | 10.0.0.5             |
+|  Web-3   | No                  | 10.0.0.5             |
 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+What is the main advantage of automating configuration with Ansible?
+  -One advantage of automation would be YAML Playbooks. It allows for setup in minutes using OpenSSH without having to go to each webserver individually. 
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- 
 - ...
 - ...
 
