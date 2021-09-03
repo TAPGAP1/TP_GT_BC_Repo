@@ -28,13 +28,16 @@ Load balancing ensures that the application will be highly functional, in additi
 What aspect of security do load balancers protect? 
  - They help prevent overloading servers by balancing the flow of traffic between them.  If a server is hit by a DDoS attack or becomes unavailable
   the other servers will take over and share the load. 
+  
 What is the advantage of a jump box?
  - A Jump Box Provisioner is important. It prevents webserver VMs from being exposed by a public IP Address. This allows us to monitor and collect logs on a single box. We can also restrict the IP addresses able to communicate with the Jump Box, as we've done here.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
+
 What does Filebeat watch for?
- - Filebeat collects data about the file system. 
- What does Metricbeat record?
+ - Filebeat collects data about the file system.
+  
+What does Metricbeat record?
  - Metricbeat collects machine metrics such as uptime or cpu usage. 
 
 The configuration details of each machine may be found below.
