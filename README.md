@@ -77,11 +77,11 @@ What is the main advantage of automating configuration with Ansible?
   -One advantage of automation would be YAML Playbooks. It allows for setup in minutes using OpenSSH without having to go to each webserver individually. 
 
 The playbook implements the following tasks:
-  -Install docker.io 
-  -Install pip3 (python3-pip)
-  -Increase Virtual Memory
-  -Download and launch ELK docker container (sebp/elk:761) w/ published ports 5601, 5044, and 9200
-  -Enable docker on boot
+    -Install docker.io 
+    -Install pip3 (python3-pip)
+    -Increase Virtual Memory
+    -Download and launch ELK docker container (sebp/elk:761) w/ published ports 5601, 5044, and 9200
+    -Enable docker on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
