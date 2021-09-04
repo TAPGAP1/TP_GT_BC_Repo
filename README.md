@@ -25,8 +25,10 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly functional, in addition to restricting high volumes of traffic to the network.
+
 What aspect of security do load balancers protect? 
- - They help prevent overloading servers by balancing the flow of traffic between them.  If a server is hit by a DDoS attack or becomes unavailable
+
+ - They help prevent overloading servers by balancing the flow of traffic between them based on a configured algorithm.  If a server is hit by a DDoS attack or becomes unavailable
   the other servers will take over and share the load. 
   
 What is the advantage of a jump box?
@@ -59,13 +61,13 @@ Only the Jump Box Provisioner machine can accept connections from the Internet.
  Access to this machine is only allowed from the following IP addresses:
  - 66.232.xxx.xxx
  
- Machines within the network can only be accessed by the Jump Box Provisioiner.
+Machines within the network can only be accessed by the Jump Box Provisioiner.
  
-  Which machine did you allow to access your ELK VM?
-   - Jump Box Provisioner
+Which machine did you allow to access your ELK VM?
+- Jump Box Provisioner
    
-  What was its IP address?
-   - 10.0.0.5
+What was its IP address?
+- 10.0.0.5
 
 A summary of the access policies in place can be found in the table below.
 
@@ -119,13 +121,13 @@ Filebeat
 
 - Copy the filebeat-config.yml file to /etc/ansible .
 - Update the filebeat-config.yml file to include the elk private IP on lines 1105 and 1805. 
-- Run the playbook, and navigate to http://elk_public_ip/app/kibana to check that the installation worked as expected.
+- Run the playbook, and navigate to http://<elk_public_IP>/app/kibana to check that the installation worked as expected.
 
 Metricbeat
 
 - Copy the metricbeat-config.yml file to /etc/ansible.
 - Update the metricbeat-config.yml file to include the ELK private IP in lines 62 and 95.
-- Run the playbook, and navigate to http://(elk public IP):5601/app/kibana to check that the installation worked as expected.
+- Run the playbook, and navigate to http://<elk_public_IP>:5601/app/kibana to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:
 
