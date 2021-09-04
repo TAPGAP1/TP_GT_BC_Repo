@@ -124,11 +124,15 @@ Filebeat
 Metricbeat
 
 - Copy the metricbeat-config.yml file to /etc/ansible.
-- Update the metricbeat-config.yml file to include the ELK private IP in lines 62 and 96.
+- Update the metricbeat-config.yml file to include the ELK private IP in lines 62 and 95.
 - Run the playbook, and navigate to http://(elk public IP):5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
+Answer the following questions to fill in the blanks:
+
+Which file is the playbook? 
+
+
+Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
