@@ -130,7 +130,7 @@ SSH into the control node and follow the steps below:
 ELK
 
  - Copy the install-elk.yml file to /etc/ansible
- - Update the Ansible-hosts file to include a "webservers" section and an "elk" section with the private IP of the ELK-VM.
+ - Update the Ansible/hosts file to include a "webservers" section and an "elk" section with the private IP of the ELK-VM.
  - Run the playbook, ssh into ELK-VM and run "docker ps" to verify installation worked as expected. *Note* - The status of the ELK container should be "up" on boot. 
 
 
@@ -144,8 +144,16 @@ Which file is the playbook?
 Where do you copy it?
 
  - /etc/ansible
-- _Which file do you update to make Ansible run the playbook on a specific machine? 
-- How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+Which file do you update to make Ansible run the playbook on a specific machine?
+
+ - Ansible/hosts
+ 
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+
+ -  Update the Ansible/hosts file to include a "webservers" section and an "elk" section with the private IP of the ELK-VM.
+ 
+Which URL do you navigate to in order to check that the ELK server is running?
+
+ - http://13.66.207.75:5601
+ 
