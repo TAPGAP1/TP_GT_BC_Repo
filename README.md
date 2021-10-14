@@ -32,7 +32,7 @@ What aspect of security do load balancers protect?
   the other servers will take over and share the load. 
   
 What is the advantage of a jump box?
- - A Jump Box Provisioner is important. It prevents webserver VMs from being exposed by a public IP Address. This allows us to monitor and collect logs on a single box. We can also restrict the IP addresses able to communicate with the Jump Box, as we've done here.
+ - A Jump Box Provisioner is important. The primary purpose of the jump box is to provide you a central management machine for configuration, patching, and maintenance of the machines on your private network. This allows us to monitor and collect logs on a single box. We can also restrict the IP addresses able to communicate with the Jump Box, as we've done here.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
 
