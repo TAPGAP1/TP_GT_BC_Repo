@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![Network Diagram](https://github.com/TAPGAP1/TP_GT_BC_Repo/blob/main/Diagrams/Network_Diagram.PNG)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the configuration files may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the configuration files may be used to install only certain pieces of it, such as Filebeat.
 
   - [filebeat-playbook.yml](https://github.com/TAPGAP1/TP_GT_BC_Repo/blob/main/Ansible/filebeat-playbook.yml)
   - [filebeat-config.yml](https://github.com/TAPGAP1/TP_GT_BC_Repo/blob/main/Ansible/filebeat-config.yml)
